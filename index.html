@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Madri Motors | Concessionária de carros de luxo</title>
+    <!-- Link para o CSS na pasta css -->
+    <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+    <header>
+        <!-- Logo oficial da marca no cabeçalho -->
+    <div class="logo-container">
+        <img src='img/logo.png' alt='Madri Motors' class='logo-site'>
+    </div>
+        <p>Explore os 4 modelos exclusivos do mundo</p>
+    </header>
+
+    <main>
+        <!-- A galeria de carros será injetada dinamicamente pelo JavaScript (SPA/Templates) -->
+        <section id='galeria-carros' class='grid-carros'>
+            <!-- cards dos carros -->
+        </section>
+
+        <!-- Secção de Formulário / Proposta -->
+        <section id="secao-formulario" class="form-container">
+            <h2>Agende uma visita exclusiva</h2>
+            <form id="form-proposta" novalidate>
+                <div class="grupo-input">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" required placeholder="Digite o seu nome" autocomplete="name">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="email">E-mail:</label>
+                    <<input type="email" id="email" required placeholder="seu@email.com" autocomplete="email">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="modelo-interesse">Modelo de Interesse:</label>
+                    <select id="modelo-interesse" required>
+                        <option value="">Selecione um modelo</option>
+                        <option value="Lamborghini Aventador SVJ">Lamborghini Aventador SVJ</option>
+                        <option value="Ferrari F8 Tributo">Ferrari F8 Tributo</option>
+                        <option value="Porsche 911 Turbo S">Porsche 911 Turbo S</option>
+                        <option value="Aston Martin Vantage">Aston Martin Vantage</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Proposta</button>
+                <p id="mensagem-feedback" class="feedback-oculto"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Madri Motors. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o JavaScript principal na pasta js -->
+    <script type='module' src='main.js'></script>
+</body>
+</html>
